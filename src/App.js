@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/Home';
+import AboutPage from './components/About';
+import EaseIn from './components/Ease-In';
+import StepUp from "./components/Step-Up";
+import AllIn from './components/All-In';
+import HealthyHabits from './components/Healthy Habits';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/ease-in" component={EaseIn} />
+        <Route exact path="/step-up" component={StepUp} />
+        <Route exact path="/all-in" component={AllIn} />
+        <Route exact path="/healthy-habits" component={HealthyHabits} />
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;
