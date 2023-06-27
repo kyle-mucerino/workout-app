@@ -1,33 +1,60 @@
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../Header/header.css';
 
 const Header = () => {
   return (
-    <AppBar position='static'>
+    <AppBar position="static" sx={{ backgroundColor: "#424242" }}>
       <Toolbar>
-        <Typography variant='h6' component="div">
-          Like an Athlete Training
+        <Typography variant="h5" component="div" sx={{ color: "#FFEA00" }}>
+          <b>
+            <i>Like an Athlete Fitness</i>
+          </b>
         </Typography>
         <nav>
-          <ul>
+          <ul className="navbar">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">
+                <b>
+                  <i>Home</i>
+                </b>
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">
+                <b>
+                  <i>About</i>
+                </b>
+              </Link>
             </li>
             <li>
-              <Link to="/ease-in">Ease In</Link>
+              <Link to="/ease-in">
+                <b>
+                  <i>Ease-In</i>
+                </b>
+              </Link>
             </li>
             <li>
-              <Link to="/step-up">Step Up</Link>
+              <Link to="/step-up">
+                <b>
+                  <i>Step-Up</i>
+                </b>
+              </Link>
             </li>
             <li>
-              <Link to="/all-in">All In</Link>
+              <Link to="/all-in">
+                <b>
+                  <i>All-In</i>
+                </b>
+              </Link>
             </li>
             <li>
-              <Link to="/healthy-habits">Healthy Habits</Link>
+              <Link to="/healthy-habits">
+                <b>
+                  <i>Healthy Habits</i>
+                </b>
+              </Link>
             </li>
           </ul>
         </nav>

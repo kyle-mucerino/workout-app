@@ -1,30 +1,41 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './components/Home';
-import AboutPage from './components/About';
-import EaseIn from './components/Ease-In';
-import StepUp from "./components/Step-Up";
-import AllIn from './components/All-In';
-import HealthyHabits from './components/Healthy Habits';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import HomePage from "./components/Home/index.js";
+import AboutPage from "./components/About/index.js";
+import EaseIn from "./components/Ease-In/index.js";
+import StepUp from "./components/Step-Up/index.js";
+import AllIn from "./components/All-In/index.js";
+import HealthyHabits from "./components/Healthy Habits/index.js";
+import Header from "./components/Header/index.js";
+import Footer from "./components/Footer/index.js";
+//import './App.css';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark"
+  }
+});
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/ease-in" component={EaseIn} />
-        <Route exact path="/step-up" component={StepUp} />
-        <Route exact path="/all-in" component={AllIn} />
-        <Route exact path="/healthy-habits" component={HealthyHabits} />
-      </Routes>
-      <Footer />
-    </Router>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/ease-in" element={<EaseIn />} />
+          <Route path="/step-up" element={<StepUp />} />
+          <Route path="/all-in" element={<AllIn />} />
+          <Route path="/healthy-habits" element={<HealthyHabits />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </ThemeProvider>
   );
-};
+}
 
 export default App;
