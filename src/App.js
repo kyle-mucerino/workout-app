@@ -8,14 +8,21 @@ import EaseIn from "./components/Ease-In/index.js";
 import StepUp from "./components/Step-Up/index.js";
 import AllIn from "./components/All-In/index.js";
 import HealthyHabits from "./components/Healthy Habits/index.js";
+import ContactPage from './components/ContactPage/index.js';
 import Header from "./components/Header/index.js";
 import Footer from "./components/Footer/index.js";
 //import './App.css';
 
 const darkTheme = createTheme({
   palette: {
-    mode: "dark"
-  }
+    mode: "dark",
+    primary: {
+      main: '#3f51b5',
+    },
+    secondary: {
+      main: '#FFD600',
+    },
+  },
 });
 
 function App() {
@@ -31,6 +38,7 @@ function App() {
           <Route path="/step-up" element={<StepUp />} />
           <Route path="/all-in" element={<AllIn />} />
           <Route path="/healthy-habits" element={<HealthyHabits />} />
+          <Route path="/contact-page" element={<ContactPage />} />
         </Routes>
         <Footer />
       </Router>

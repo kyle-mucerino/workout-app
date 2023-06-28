@@ -5,9 +5,9 @@ import '../Header/header.css';
 
 const Header = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#424242" }}>
+    <AppBar position="static" sx={{ backgroundColor: "#0D47A1" }}>
       <Toolbar>
-        <Typography variant="h5" component="div" sx={{ color: "#FFEA00" }}>
+        <Typography variant="h5" component="div" sx={{ color: "black" }}>
           <b>
             <i>Like an Athlete Fitness</i>
           </b>
@@ -54,6 +54,11 @@ const Header = () => {
                 <b>
                   <i>Healthy Habits</i>
                 </b>
+              </Link>
+            </li>
+            <li>
+              <Link to="contact-page">
+                <b><i>Contact Us</i></b>
               </Link>
             </li>
           </ul>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button, Popover, ImageListItem, ImageList } from "@mui/material";
+import { Box, Typography, Button, Popover, ImageListItem, ImageList, CardContent, Card } from "@mui/material";
 
 import dracsZoom from '../../assets/Dracs Zoom.png';
 import flag from '../../assets/Flag.png';
@@ -27,15 +27,19 @@ const HomePage = () => {
 
   return (
     <Box sx={{ textAlign: "center", padding: "2rem" }}>
-      <Typography variant="h4" gutterBottom>
-        LIKE AN ATHLETE FITNESS
-      </Typography>
-      <Typography variant="body1" gutterBottom>
-        When you train with Like an Athlete Fitness, you incorprate various different exercises and workouts stemming from the workouts of sport specific athletes based on your goals and workout preferences. We don't want anyone feeling like their boxed into a cornder when it comes to getting a good workout. Whether you go to a gym, at your house, or enjoy an outdoor workout, our vision is to bring you a dynamic and enjoyable workout that allows for freedom and tangible results.
-      </Typography>
-      <Button aria-describedby={id} variant="contained" onClick={handleClick}>
-        Get Started
-      </Button>
+      <Card variant="outlined">
+        <CardContent>
+          <Typography variant="h4" gutterBottom>
+            LIKE AN ATHLETE FITNESS
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            When you train with Like an Athlete Fitness, you incorprate various different exercises and workouts stemming from the workouts of sport specific athletes based on your goals and workout preferences. We don't want anyone feeling like their boxed into a cornder when it comes to getting a good workout. Whether you go to a gym, at your house, or enjoy an outdoor workout, our vision is to bring you a dynamic and enjoyable workout that allows for freedom and tangible results.
+          </Typography>
+          <Button aria-describedby={id} variant="contained" onClick={handleClick}>
+            Get Started
+          </Button>
+        </CardContent>
+      </Card>
       <Popover
         id={id}
         open={open}

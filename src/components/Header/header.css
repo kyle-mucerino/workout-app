@@ -13,14 +13,14 @@
 }
 
 .navbar a {
-  color: #FFEA00;
+  color: black;
   text-decoration: none;
 }
 
 
 .navbar li {
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 40px;
+  margin-left: 45px;
 }
 
 .navbar li:last-child {
