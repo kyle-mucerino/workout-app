@@ -15,7 +15,7 @@ const ContactPage = () => {
       comment: comment
     };
 
-    fetch("/api/contact-page", {
+    fetch("http://localhost:3000/api/contact-page", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

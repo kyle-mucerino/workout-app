@@ -23,11 +23,16 @@ client
     const db = client.db(dbName);
     const collection = db.collection(collectionName);
 
+    const cors = require("cors");
+
+    app.use(cors());
+
+
     // Pass the collection as an argument
     const routesWithCollection = routes(collection);
 
     // Use the routes middleware
-    app.use("/api/contact-page", routesWithCollection);
+    app.use("/", routesWithCollection);
 
     // Start your server or perform other operations after successful database connection
     app.listen(3000, () => {
