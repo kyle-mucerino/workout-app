@@ -9,9 +9,28 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Perform any necessary form submission logic here
-    // For this example, we will just log the form data
-    console.log({ name, email, comment });
+    const data = {
+      name: name,
+      email: email,
+      comment: comment
+    };
+
+    fetch("/api/contact-page", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Response:", data);
+        // Handle the response as needed
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        // Handle the error as needed
+      });
 
     // Reset the form fields
     setName("");
