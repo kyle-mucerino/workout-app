@@ -15,7 +15,7 @@ const Footer = () => {
           <Facebook />
         </a>
         <a
-          href="https://www.europlayers.https://www.europlayers.com/ViewProfilePlayer.aspx?ProfileId=65718com/player/123456789"
+          href="https://europlayers.com/ViewProfilePlayer.aspx?ProfileId=65718"
           target="_blank"
           rel="noopener noreferrer"
         >
