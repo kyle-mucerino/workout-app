@@ -8,8 +8,7 @@ const dbName = "workout-app";
 const app = express();
 
 // Set up the database connection
-const uri =
-  "mongodb+srv://kylemucerino:redhonda@laafcluster.j9csdr3.mongodb.net/?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 
 app.use(express.json());
