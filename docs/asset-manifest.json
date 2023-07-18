@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/workout-app/static/css/main.e98d8cf8.css",
+    "main.js": "/workout-app/static/js/main.c7ebd422.js",
+    "static/js/651.e8edc348.chunk.js": "/workout-app/static/js/651.e8edc348.chunk.js",
+    "static/media/SanJuanCoaching.PNG": "/workout-app/static/media/SanJuanCoaching.16ceb18cada782620e9d.PNG",
+    "static/media/Dracs Zoom.png": "/workout-app/static/media/Dracs Zoom.286152322b513d0991ba.png",
+    "static/media/TVPic.png": "/workout-app/static/media/TVPic.7fd1d6f097cdc73cb89d.png",
+    "static/media/Flag.png": "/workout-app/static/media/Flag.f7cfc67be75037fb51d4.png",
+    "static/media/Photoshoot.png": "/workout-app/static/media/Photoshoot.8cee215d16f3f36a5fc5.png",
+    "static/media/Photoshoot2.png": "/workout-app/static/media/Photoshoot2.90ec17919e6a1d7b20f5.png",
+    "static/media/Leaders.jpeg": "/workout-app/static/media/Leaders.b2d020d554f1fee5bd59.jpeg",
+    "static/media/benchPic.png": "/workout-app/static/media/benchPic.64c3a0ec9a1b4f3195fb.png",
+    "index.html": "/workout-app/index.html",
+    "main.e98d8cf8.css.map": "/workout-app/static/css/main.e98d8cf8.css.map",
+    "main.c7ebd422.js.map": "/workout-app/static/js/main.c7ebd422.js.map",
+    "651.e8edc348.chunk.js.map": "/workout-app/static/js/651.e8edc348.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e98d8cf8.css",
+    "static/js/main.c7ebd422.js"
+  ]
+}
